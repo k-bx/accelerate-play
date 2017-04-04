@@ -46,9 +46,12 @@ extra-deps:
 - accelerate-llvm-ptx-1.0.0.0
 - chaselev-deque-0.5.0.5
 - cuda-0.7.5.3
+- llvm-hs-4.0.1.0
 
 # Override default flag values for local packages and extra-deps
-flags: {}
+flags:
+  llvm-hs:
+    shared-llvm: true
 
 # Extra package databases containing global packages
 extra-package-dbs: []
